@@ -84,8 +84,8 @@ The charts below have been created using the output data from this pipeline and 
 
 ![Priority Shifts](plot_risk.png)
 
-- Several categories show increases in higher-priority complaints (e.g. **Fraud/Scam Concerns**).  
-- However, large confidence intervals indicate high uncertainty, meaning the statistical model indicates that they are likely due to natural fluctuation.  
+- Several categories show noteworthy increases or decreases in higher-priority complaints (e.g. **Fraud/Scam Concerns**).  
+- However, large confidence intervals indicate high uncertainty due to the low number of records per category, meaning the statistical model indicates that all except one are likely due to natural fluctuation.
 - Only **Technical Errors** shows a statistically meaningful increase in medium+ priority complaints.
 
 
