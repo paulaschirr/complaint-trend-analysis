@@ -93,7 +93,7 @@ The charts below have been created using the output data from this pipeline and 
 
 Not all observed changes are meaningful. This approach helps distinguish **real shifts** that warrant investigation from **random variation** that should not drive decisions  
 
-By combining observed data with model-based uncertainty, the pipeline reduces the risk of overinterpreting noise in low-volume, multi-category datasets.
+By combining observed data with model-based uncertainty, the pipeline reduces the risk of overinterpreting noise in low-volume, multi-category datasets. This highlights meaningful changes while avoiding time spent discussing variation that is likely just noise.
 
 ## Running the Pipeline
 
@@ -106,12 +106,6 @@ By combining observed data with model-based uncertainty, the pipeline reduces th
 source("scripts/pipeline.R")
 ```
 
-## Dependencies
+### Dependencies
 Packages dplyr, tidyr & MASS
 
-## Key insight
-This project demonstrates how statistical methods can be integrated into routine reporting to:
-
-- reduce false positive trends
-- highlight genuinely meaningful changes
-- improve the quality of business decisions
