@@ -38,6 +38,25 @@ The pipeline combines statistical testing and model-based estimation to distingu
 - Identifies meaningful changes in higher-priority complaints  
 
 
+## Output
+The pipeline produces two datasets:
+- Category distribution changes  
+- Priority shift (model-based and observed)
+
+These outputs are designed to be consumed directly by reporting tools.
+
+
+## Integration with Reporting
+
+The pipeline is designed to integrate upstream of any analytics or reporting platform.
+
+It can:
+- run independently (e.g. scheduled via a VM or task scheduler)
+- run within a platform (e.g. Microsoft Fabric)
+
+Outputs are written as simple CSV files, allowing downstream tools (Power BI, Tableau, etc.) to pick them up for visualisation without transformation.
+
+
 ## Example Dataset
 
 The included dataset is synthetic and designed to mimic real-world complaint data:
@@ -49,7 +68,6 @@ The included dataset is synthetic and designed to mimic real-world complaint dat
 
 It also includes small data quality issues (e.g. missing values, future-dated record) to demonstrate robustness.
 
----
 
 ## Running the Pipeline
 
