@@ -78,7 +78,7 @@ The charts below have been created using the output data from this pipeline and 
 
 - Some categories change slightly quarter-to-quarter, but most differences fall within expected random variation.  
 - Only **Service Quality** shows a statistically significant increase, suggesting a genuine shift in the underlying category mix.  
-- Other movements (e.g. **Billing Issues** or **Information Requests**) may appear notable but are likely noise.
+- Other movements (e.g. a decrease in **Billing Issues**) may appear notable but are likely noise.
 
 ### Priority Shifts (Medium+ Complaints)
 
