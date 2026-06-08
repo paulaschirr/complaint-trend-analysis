@@ -2,11 +2,8 @@
 
 ### Overview
 
-This project demonstrates an end-to-end R pipeline for analysing quarterly changes in customer complaint data. It is designed to address a common problem in business intelligence:
+In high‑stakes, low‑volume datasets, over‑interpreting changes is a real business risk. Apparent trends often reflect natural variation rather than genuinely significant shifts, but can still drive decisions and actions. This project demonstrates an end-to-end R pipeline for analysing quarterly changes in customer complaint data. It applies statistical testing and model‑based estimation to distinguish meaningful change from noise, helping teams focus on genuine shifts in complaint categories and medium+ risks.
 
-**In low-volume datasets with many categories, apparent trends are often driven by random variation rather than real change.**
-
-The pipeline uses statistical testing and model-based estimation to distinguish meaningful shifts from noise, helping reduce over-interpretation of small changes, ultimately improving decision-making.
 
 ## Pipeline Structure
 
