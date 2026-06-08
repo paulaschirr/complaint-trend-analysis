@@ -68,6 +68,32 @@ The included dataset is synthetic and designed to mimic real-world complaint dat
 
 It also includes small data quality issues (e.g. missing values, future-dated record) to demonstrate robustness.
 
+## Example Interpretation
+
+The charts below have been created using the output data from this pipeline and illustrate how observed changes can differ from statistically meaningful changes.
+
+### Category Shifts
+
+![Category Shifts](plot_cat.png)
+
+- Some categories change slightly quarter-to-quarter, but most differences fall within expected random variation.  
+- Only **Service Quality** shows a statistically significant increase, suggesting a genuine shift in the underlying category mix.  
+- Other movements (e.g. **Billing Issues** or **Information Requests**) may appear notable but are likely noise.
+
+### Priority Shifts (Medium+ Complaints)
+
+![Priority Shifts](plot_risk.png)
+
+- Several categories show increases in higher-priority complaints (e.g. **Fraud/Scam Concerns**).  
+- However, large confidence intervals indicate high uncertainty, meaning the statistical model indicates that they are likely due to natural fluctuation.  
+- Only **Technical Errors** shows a statistically meaningful increase in medium+ priority complaints.
+
+
+### Key Takeaway
+
+Not all observed changes are meaningful. This approach helps distinguish **real shifts** that warrant investigation from **random variation** that should not drive decisions  
+
+By combining observed data with model-based uncertainty, the pipeline reduces the risk of overinterpreting noise in low-volume, multi-category datasets.
 
 ## Running the Pipeline
 
