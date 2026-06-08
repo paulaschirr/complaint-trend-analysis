@@ -6,7 +6,7 @@ This project demonstrates an end-to-end R pipeline for analysing quarterly chang
 
 **In low-volume datasets with many categories, apparent trends are often driven by random variation rather than real change.**
 
-The pipeline combines statistical testing and model-based estimation to distinguish meaningful shifts from noise, helping teams focus on changes that matter and move away from over-interpretation of small changes and reactive decision-making.
+The pipeline uses statistical testing and model-based estimation to distinguish meaningful shifts from noise, helping reduce over-interpretation of small changes and more reactive decision-making.
 
 ## Pipeline Structure
 
