@@ -1,0 +1,17 @@
+2026-06-08 14:07:51 | START | Pipeline started
+2026-06-08 14:07:51 | INFO  | Starting processing for 2026_Q2
+2026-06-08 14:07:52 | INFO  | Using fallback input_data.csv
+2026-06-08 14:07:52 | WARN  | 1 rows removed due to implausible future dates
+2026-06-08 14:07:52 | INFO  | Test mode: shifted dates by 0 days
+2026-06-08 14:07:52 | INFO  | Rows after quarter filter: 3595
+2026-06-08 14:07:52 | INFO  | Running category delta analysis
+2026-06-08 14:07:52 | INFO  | Shift in category distribution (chi-square significant): TRUE
+2026-06-08 14:07:52 | INFO  | Overall effect present (Cramer's V >= 0.1): FALSE
+2026-06-08 14:07:52 | INFO  | Running risk bootstrap model
+2026-06-08 14:09:50 | INFO  | Shift in Medium+ risk categories detected: TRUE
+2026-06-08 14:09:50 | OK    | Quarterly analysis completed
+2026-06-08 14:09:50 | INFO  | Archived: category_delta_2026-Q2.csv
+2026-06-08 14:09:50 | INFO  | Archived: risk_model_delta_2026-Q2.csv
+2026-06-08 14:09:50 | OK    | Quarter completed: 2026_Q2
+2026-06-08 14:50:30 | START | Pipeline started
+2026-06-08 14:50:31 | SKIP  | Run skipped - already processed: 2026_Q2
