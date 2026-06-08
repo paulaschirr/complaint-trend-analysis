@@ -2,26 +2,11 @@
 
 ### Overview
 
-This project demonstrates an end-to-end R pipeline for analysing quarterly changes in customer complaint data.
+This project demonstrates an end-to-end R pipeline for analysing quarterly changes in customer complaint data. It is designed to address a common problem in business intelligence:
 
-It is designed to address a common problem in business intelligence:
+**In low-volume datasets with many categories, apparent trends are often driven by random variation rather than real change.**
 
-> **In low-volume datasets with many categories, apparent trends are often driven by random variation rather than real change.**
-
-The pipeline combines statistical testing and model-based estimation to distinguish meaningful shifts from noise, helping teams focus on changes that matter.
-
----
-
-## Problem Context
-
-Complaint reporting typically involves:
-- multiple categories
-- relatively low counts per category
-- periodic (e.g. quarterly) comparisons
-
-This can lead to over-interpretation of small changes and reactive decision-making. This project shows how statistical methods can improve judgement in these scenarios.
-
----
+The pipeline combines statistical testing and model-based estimation to distinguish meaningful shifts from noise, helping teams focus on changes that matter and move away from over-interpretation of small changes and reactive decision-making.
 
 ## Pipeline Structure
 
@@ -52,7 +37,6 @@ This can lead to over-interpretation of small changes and reactive decision-maki
 - Applies bootstrap estimation  
 - Identifies meaningful changes in higher-priority complaints  
 
----
 
 ## Example Dataset
 
@@ -76,3 +60,14 @@ It also includes small data quality issues (e.g. missing values, future-dated re
 
 ```r
 source("scripts/pipeline.R")
+```
+
+## Dependencies
+Packages dplyr, tidyr & MASS
+
+## Key insight
+This project demonstrates how statistical methods can be integrated into routine reporting to:
+
+- reduce false positive trends
+- highlight genuinely meaningful changes
+- improve the quality of business decisions
